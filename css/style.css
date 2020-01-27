@@ -1,0 +1,79 @@
+/* CSS Styelsheet */
+
+@import "import-styles.css";
+
+body {
+
+color: #878787;
+margin:0;
+
+}
+
+nav {
+
+background-color: #fff;
+margin:0;
+
+
+}
+
+.main-header {
+
+background-color: #ffcc33;
+text-align: center;
+
+
+}
+
+/* Type selectors*/
+
+h1 {
+
+font-size: 72px;
+color: white;
+text-align: center;
+
+
+}
+
+h2 {
+
+font-size: 72px;
+color: white;
+
+}
+
+.secondary-content {
+
+background-color: #6dc4f0;
+
+}
+
+/*This makes the footer top border black*/
+.t-border {
+  border-top: 5px solid #000000;
+}
+
+/* Link selector*/
+
+a:link {
+  color: orange;
+}
+
+a:hover {
+ color: forestgreen;
+}
+
+a:active {
+  color: lightcoral;
+}
+
+
+#main-footer {
+
+padding-top: 20px;
+padding-bottom: 20px;
+text-align: center;
+
+
+}
