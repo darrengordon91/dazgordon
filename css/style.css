@@ -32,9 +32,11 @@ font-size: 1.2em;
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  color: #AFF1DA;
+  color: #83EAF1;
   text-align: center;
-  font-family: monospace;
+  font-family: arial;
+  font-weight: bold;
+  text-transform: uppercase;
   display:inline-block;
   padding: 14px 16px;
   text-decoration: none;
@@ -43,13 +45,13 @@ font-size: 1.2em;
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #AFF1DA;
+  background-color: #83EAF1;
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #83EAF1;
   color: white;
 }
 
@@ -91,7 +93,8 @@ font-size: 1.2em;
 .main-header {
 
 background-color: #f9ea8f;
-background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+background-image: linear-gradient(315deg, #83EAF1 0%, #63A4FF
+ 74%);
 text-align: center;
 padding: 10%;
 padding-top: 120px;
@@ -109,11 +112,12 @@ padding-bottom: 200px;
 
 h1 {
 
-font-size: 4em;
+font-size: 3.2em;
 color: #000;
 text-align: center;
-font-family: monospace;
+font-family: arial;
 text-transform: uppercase;
+font-weight: bold;
 margin-top: 24px;
 line-height: 1;
 
@@ -121,14 +125,15 @@ line-height: 1;
 
 h2 {
 
-font-size: 2.5em;
-color: white;
-font-family: monospace;
+font-size: 1.6em;
+color: #FFF;
+font-family: arial;
 
 }
 
 p  {
-font-family: monospace;
+font-family: arial;
+font-weight: bold;
 
 
 
@@ -147,6 +152,39 @@ background-color: #6dc4f0;
 
 }
 
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fab-untappd{
+  background: #000;
+  color: white;
+}
+
+/* Twitter */
+.fa-linkedin {
+  background: #000;
+  color: white;
+}
+
+/* Twitter */
+.fa-instagram {
+  background: #000;
+  color: white;
+}
 
 
 
