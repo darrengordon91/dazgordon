@@ -1,10 +1,10 @@
 // Placeholder configuration - replace with your Supabase project credentials
 const supabaseUrl = 'https://YOUR_SUPABASE_URL.supabase.co';
 const supabaseKey = 'YOUR_SUPABASE_ANON_KEY';
-const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+const client = window.supabase.createClient(supabaseUrl, supabaseKey);
 
 async function loadNavigation() {
-  const { data, error } = await supabase
+  const { data, error } = await client
     .from('navigation')
     .select('title,url')
     .order('position');
@@ -25,7 +25,7 @@ async function loadNavigation() {
 }
 
 async function loadProfile() {
-  const { data, error } = await supabase
+  const { data, error } = await client
     .from('profile')
     .select('*')
     .single();
@@ -42,7 +42,7 @@ async function loadProfile() {
 }
 
 async function loadContact() {
-  const { data, error } = await supabase
+  const { data, error } = await client
     .from('contact')
     .select('*')
     .single();
@@ -57,7 +57,7 @@ async function loadContact() {
 }
 
 async function loadFooter() {
-  const { data, error } = await supabase
+  const { data, error } = await client
     .from('footer')
     .select('*')
     .single();
