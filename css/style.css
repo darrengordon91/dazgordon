@@ -188,6 +188,15 @@ background-color: #6dc4f0;
   color: white;
 }
 
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  margin-bottom: 1em;
+}
+
 
 
 
