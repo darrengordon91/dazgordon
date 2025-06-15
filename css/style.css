@@ -106,6 +106,10 @@ padding-bottom: 200px;
   border: solid 4px #fff;
 }
 
+.profile-text {
+  text-align: center;
+}
+
 /* Type selectors*/
 
 h1 {
@@ -182,6 +186,15 @@ background-color: #6dc4f0;
 .fa-instagram {
   background: #000;
   color: white;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  margin-bottom: 1em;
 }
 
 
