@@ -1,10 +1,17 @@
 // Placeholder configuration - replace with your Supabase project credentials
 const supabaseUrl = 'https://YOUR_SUPABASE_URL.supabase.co';
 const supabaseKey = 'YOUR_SUPABASE_ANON_KEY';
+fioxgn-codex/analyze-cms-integration-and-identify-legacy-content
 const client = window.supabase.createClient(supabaseUrl, supabaseKey);
 
 async function loadNavigation() {
   const { data, error } = await client
+=======
+const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+async function loadNavigation() {
+  const { data, error } = await supabase
+master
     .from('navigation')
     .select('title,url')
     .order('position');
@@ -25,7 +32,11 @@ async function loadNavigation() {
 }
 
 async function loadProfile() {
+fioxgn-codex/analyze-cms-integration-and-identify-legacy-content
   const { data, error } = await client
+=======
+  const { data, error } = await supabase
+master
     .from('profile')
     .select('*')
     .single();
@@ -42,7 +53,11 @@ async function loadProfile() {
 }
 
 async function loadContact() {
+fioxgn-codex/analyze-cms-integration-and-identify-legacy-content
   const { data, error } = await client
+=======
+  const { data, error } = await supabase
+master
     .from('contact')
     .select('*')
     .single();
@@ -57,7 +72,11 @@ async function loadContact() {
 }
 
 async function loadFooter() {
+fioxgn-codex/analyze-cms-integration-and-identify-legacy-content
   const { data, error } = await client
+=======
+  const { data, error } = await supabase
+master
     .from('footer')
     .select('*')
     .single();
@@ -68,6 +87,7 @@ async function loadFooter() {
   document.querySelector('#main-footer p').innerHTML = data.text;
 }
 
+  fioxgn-codex/analyze-cms-integration-and-identify-legacy-content
 async function loadAbout() {
   const aboutSection = document.querySelector('#about .about-content');
   if (!aboutSection) return;
@@ -82,11 +102,14 @@ async function loadAbout() {
   aboutSection.innerHTML = data.content_html;
 }
 
+=======
+master
 document.addEventListener('DOMContentLoaded', async () => {
   await loadNavigation();
   await loadProfile();
   await loadContact();
   await loadFooter();
+fioxgn-codex/analyze-cms-integration-and-identify-legacy-content
   await loadAbout();
   await loadServices();
 });
@@ -114,3 +137,6 @@ async function loadServices() {
     servicesList.appendChild(li);
   });
 }
+=======
+});
+master
